@@ -17,7 +17,6 @@ module Projects
 
     config.generators do |g|
       g.test_frame_work :rspec,
-        fixtures: false,
         view_spec: false,
         helper_specs: false,
         routing_specs: false
