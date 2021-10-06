@@ -31,6 +31,11 @@ group :development do
   gem 'spring-commands-rspec'
 end
 
+group :test do
+  gem 'webdrivers'
+  gem 'launchy', '~> 2.4.3'
+end
+
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'bootstrap-sass'
