@@ -21,6 +21,10 @@ FactoryBot.define do
       after(:create) { |project| create_list(:note, 5, project: project) }
     end
 
+    trait :invalid do
+      name nil
+    end
+
     # factory :project_due_yesterday do
     #   due_on 1.day.ago
     # end
